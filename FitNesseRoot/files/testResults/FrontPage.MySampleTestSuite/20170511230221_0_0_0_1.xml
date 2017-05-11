@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.MySampleTestSuite</rootPath>
+  <pageHistoryReference>
+    <name>FrontPage.MySampleTestSuite.MySampleTest</name>
+    <date>2017-05-11T23:02:21+02:00</date>
+    <pageHistoryLink>FrontPage.MySampleTestSuite.MySampleTest?pageHistory&amp;resultDate=20170511230221</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>20</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>fit:fit.FitServer</testSystem>
+    <command>/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java -cp /Users/chris/.m2/repository/org/fitnesse/fitnesse/20161106/fitnesse-20161106.jar fit.FitServer MacBook-Air-van-Chris.local 60012 3863</command>
+    <exitCode>1</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>10558</totalRunTimeInMillis>
+</suiteResults>
+

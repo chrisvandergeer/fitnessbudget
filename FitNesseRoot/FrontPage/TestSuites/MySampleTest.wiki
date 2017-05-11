@@ -1,0 +1,2 @@
+|script:my sample fixture|
+|check|bereken|5|plus|7|12|

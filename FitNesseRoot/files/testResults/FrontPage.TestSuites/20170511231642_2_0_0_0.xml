@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.TestSuites</rootPath>
+  <pageHistoryReference>
+    <name>FrontPage.TestSuites.SuiteSetUp</name>
+    <date>2017-05-11T23:16:42+02:00</date>
+    <pageHistoryLink>FrontPage.TestSuites.SuiteSetUp?pageHistory&amp;resultDate=20170511231642</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>57</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>FrontPage.TestSuites.MySampleTest</name>
+    <date>2017-05-11T23:16:42+02:00</date>
+    <pageHistoryLink>FrontPage.TestSuites.MySampleTest?pageHistory&amp;resultDate=20170511231642</pageHistoryLink>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>66</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java -cp /Users/chris/.m2/repository/org/fitnesse/fitnesse/20161106/fitnesse-20161106.jar:/Users/chris/ws/intellijws/fitnessebudget/target/classes:/Users/chris/.m2/repository/org/fitnesse/fitnesse/20161106/fitnesse-20161106.jar:/Users/chris/.m2/repository/org/htmlparser/htmlparser/2.1/htmlparser-2.1.jar:/Users/chris/.m2/repository/org/htmlparser/htmllexer/2.1/htmllexer-2.1.jar:/Users/chris/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/Users/chris/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/chris/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/chris/.m2/repository/org/json/json/20151123/json-20151123.jar:/Users/chris/.m2/repository/com/googlecode/java-diff-utils/diffutils/1.3.0/diffutils-1.3.0.jar:/Users/chris/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/chris/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/chris/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/chris/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>2</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>503</totalRunTimeInMillis>
+</suiteResults>
+

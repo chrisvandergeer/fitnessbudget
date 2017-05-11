@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20161106</FitNesseVersion>
+  <rootPath>FrontPage.MySampleTestSuite</rootPath>
+  <pageHistoryReference>
+    <name>FrontPage.MySampleTestSuite.MySampleTest</name>
+    <date>2017-05-11T23:03:14+02:00</date>
+    <pageHistoryLink>FrontPage.MySampleTestSuite.MySampleTest?pageHistory&amp;resultDate=20170511230314</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/bin/java -cp /Users/chris/.m2/repository/org/fitnesse/fitnesse/20161106/fitnesse-20161106.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>431</totalRunTimeInMillis>
+</suiteResults>
+
