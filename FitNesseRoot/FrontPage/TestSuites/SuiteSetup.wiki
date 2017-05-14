@@ -3,3 +3,4 @@ Suite: no
 ---
 |import|
 |nl.cge.sample|
+|nl.cge.json|
