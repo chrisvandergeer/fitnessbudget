@@ -1,0 +1,25 @@
+---
+Test
+---
+!4 Verwijder eventueel aanwezig tags
+-!|script:transaktie fixture|
+|check|doDelete|http://localhost:8080/tag|=~/Aantal verwijderde tags: \d/|
+!4 Voeg tag 'testTag' toe aan alle transakties met zoektekst 'XXYZXX' en verifieer resultaat
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=XXYZXX&tag=testTag|POST|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
+|28-04-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 17:27 pasnr. 018|NL60RABO0393127559||-1.69|testTag|
+|21-07-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 14:14 pasnr. 018|NL60RABO0393127559||-1.78|testTag|
+|27-07-2016|07-HF-RL XXYZXX 22-06-2016 t/m 21-07-2016 MEER INFO WWW.BELASTINGDIENST.NL|NL60RABO0393127559|NL86INGB0002445588 (BELASTINGDIENST)|934.0|testTag|
+!4 Voeg tag '2ndTag' toe aan alle transakties met zoektekst '07-HF-RL XXYZXX' en verifieer resultaat
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=07-HF-RL%20XXYZXX&tag=2ndTag|POST|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
+|27-07-2016|07-HF-RL XXYZXX 22-06-2016 t/m 21-07-2016 MEER INFO WWW.BELASTINGDIENST.NL|NL60RABO0393127559|NL86INGB0002445588 (BELASTINGDIENST)|934.0|2ndTag, testTag|
+!4 Zoek op zoektekst 'XXYZXX' en verifieer de tags die gekoppeld zijn aan de transakties
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=XXYZXX|GET|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
+|28-04-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 17:27 pasnr. 018|NL60RABO0393127559||-1.69|testTag|
+|21-07-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 14:14 pasnr. 018|NL60RABO0393127559||-1.78|testTag|
+|27-07-2016|07-HF-RL XXYZXX 22-06-2016 t/m 21-07-2016 MEER INFO WWW.BELASTINGDIENST.NL|NL60RABO0393127559|NL86INGB0002445588 (BELASTINGDIENST)|934.0|2ndTag, testTag|
+!4 Verwijder toegevoegde tags
+-!|script:transaktie fixture|
+|check|doDelete|http://localhost:8080/tag|Aantal verwijderde tags: 4|

@@ -1,6 +1,7 @@
 ---
 Test
 ---
-!|query:transaktie fixture|http://localhost:8080/transaktie/tegenrekening/NL44DLBK2020603641?search=XXXXX|
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=XXXXX|
 |transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
 |28-01-2016|Autom. incasso XXXXX Lloyd BankZeke rPlusHypotheek RekeningIBAN NL44DLB K2020603640|NL60RABO0393127559|NL44DLBK2020603641 (Dhr CB van der Geer)|-169.76||
+|19-01-2016|DEKAMARKT XXXXX 509 UGCHELEN Betaalautomaat 18:14 pasnr. 018|NL60RABO0393127559||-11.19||
