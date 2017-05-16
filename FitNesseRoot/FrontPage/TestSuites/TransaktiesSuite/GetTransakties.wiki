@@ -1,5 +1,0 @@
----
-Test
----
-!|query:transaktie fixture|http://localhost:8080/transaktie/tegenrekening/NL44DLBK2020603640|
-|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|

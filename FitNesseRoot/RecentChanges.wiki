@@ -1,9 +1,0 @@
-|FrontPage.TestSuites.TransaktiesSuite.GetTransakties||22:31:18 zo, mei 14, 2017|
-|FrontPage.TestSuites.SuiteSetup||22:20:04 zo, mei 14, 2017|
-|FrontPage.TestSuites.TransaktiesSuite||22:18:19 zo, mei 14, 2017|
-|FrontPage.TestSuites||23:15:34 do, mei 11, 2017|
-|FrontPage.SuiteSetup||23:13:20 do, mei 11, 2017|
-|||23:13:03 do, mei 11, 2017|
-|FrontPage.MySampleTestSuite.MySampleTest||23:12:17 do, mei 11, 2017|
-|FrontPage||23:01:55 do, mei 11, 2017|
-|FrontPage.MySampleTestSuite||23:01:49 do, mei 11, 2017|

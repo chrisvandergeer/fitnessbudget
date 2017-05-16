@@ -2,3 +2,7 @@
 *.iml
 target/
 *.zip
+
+# FitNesse history
+*.xml
+RecentChanges.wiki

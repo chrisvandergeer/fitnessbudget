@@ -1,0 +1,6 @@
+---
+Test
+---
+!|query:transaktie fixture|http://localhost:8080/transaktie/tegenrekening/NL44DLBK2020603641?search=XXXXX|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|
+|28-01-2016|Autom. incasso XXXXX Lloyd BankZeke rPlusHypotheek RekeningIBAN NL44DLB K2020603640|NL60RABO0393127559|NL44DLBK2020603641 (Dhr CB van der Geer)|-169.76|
