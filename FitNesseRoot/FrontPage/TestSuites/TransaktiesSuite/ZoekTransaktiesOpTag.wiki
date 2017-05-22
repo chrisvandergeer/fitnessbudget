@@ -1,0 +1,28 @@
+---
+Test
+---
+!4 Verwijder eventueel aanwezig tags
+-!|script:transaktie fixture|
+|check|doDelete|http://localhost:8080/tag|=~/Aantal verwijderde tags: \d/|
+!4 Zoek op tag 'myTag', geen resultaat verwacht
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=:myTag|GET|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
+!4 Zoek en voeg tag 'myTag' toe.
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=XXYZXX&tag=myTag|POST|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
+|28-04-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 17:27 pasnr. 018|NL60RABO0393127559||-1.69|myTag|
+|21-07-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 14:14 pasnr. 018|NL60RABO0393127559||-1.78|myTag|
+|27-07-2016|07-HF-RL XXYZXX 22-06-2016 t/m 21-07-2016 MEER INFO WWW.BELASTINGDIENST.NL|NL60RABO0393127559|NL86INGB0002445588 (BELASTINGDIENST)|934.0|myTag|
+!4 Zoek op tag 'myTag' en verwacht hetzelfde resultaat
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=:myTag|GET|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
+|28-04-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 17:27 pasnr. 018|NL60RABO0393127559||-1.69|myTag|
+|21-07-2016|XXYZXX LOC 509 UGCHELEN Betaalautomaat 14:14 pasnr. 018|NL60RABO0393127559||-1.78|myTag|
+|27-07-2016|07-HF-RL XXYZXX 22-06-2016 t/m 21-07-2016 MEER INFO WWW.BELASTINGDIENST.NL|NL60RABO0393127559|NL86INGB0002445588 (BELASTINGDIENST)|934.0|myTag|
+!4 Zoek op tag 'myTag' icm zoektekst
+!|query:transaktie fixture|http://localhost:8080/transaktie?search=07-HF-RL%20:myTag|GET|
+|transaktiedatum|omschrijving|rekening|tegenrekening|bedrag|tags|
+|27-07-2016|07-HF-RL XXYZXX 22-06-2016 t/m 21-07-2016 MEER INFO WWW.BELASTINGDIENST.NL|NL60RABO0393127559|NL86INGB0002445588 (BELASTINGDIENST)|934.0|myTag|
+!4 Verwijder toegevoegde tags
+-!|script:transaktie fixture|
+|check|doDelete|http://localhost:8080/tag|Aantal verwijderde tags: 3|
