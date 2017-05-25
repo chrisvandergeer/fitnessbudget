@@ -1,0 +1,4 @@
+|script:template fixture                                                      |
+|naam |Pietje Puk                                                             |
+|datum|2017-05-25                                                             |
+|check|maak bericht|Heden ten dagen op 2017-05-25 verscheen Pietje Puk aan mij|

@@ -1,6 +1,9 @@
----
-Suite: no
----
-|import|
-|nl.cge.sample|
-|nl.cge.json|
+ 
+!**> imports
+
+|import         |
+|nl.cge.sample  |
+|nl.cge.json    |
+|nl.cge.fixtures|
+
+***!
