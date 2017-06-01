@@ -1,4 +1,4 @@
-package nl.cge;
+package nl.cge.fitnesse;
 
 /**
  * Created by chris on 16-05-17.

@@ -1,4 +1,4 @@
-package nl.cge.template;
+package nl.cge.fitnesse.support.template;
 
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;

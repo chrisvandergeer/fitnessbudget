@@ -1,7 +1,7 @@
 package nl.cge.fixtures.samples;
 
-import nl.cge.template.Template;
-import nl.cge.template.TemplateEngine;
+import nl.cge.fitnesse.support.template.Template;
+import nl.cge.fitnesse.support.template.TemplateEngine;
 
 import java.time.LocalDate;
 import java.util.HashMap;

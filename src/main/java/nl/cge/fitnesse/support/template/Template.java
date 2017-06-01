@@ -1,4 +1,4 @@
-package nl.cge.template;
+package nl.cge.fitnesse.support.template;
 
 /**
  * Created by chris on 25-05-17.
