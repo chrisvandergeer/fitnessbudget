@@ -1,4 +1,4 @@
-package nl.cge.sample;
+package nl.cge.fixtures.samples;
 
 /**
  * Created by chris on 11-05-17.

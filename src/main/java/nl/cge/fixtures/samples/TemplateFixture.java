@@ -1,4 +1,4 @@
-package nl.cge.fixtures;
+package nl.cge.fixtures.samples;
 
 import nl.cge.template.Template;
 import nl.cge.template.TemplateEngine;
@@ -10,7 +10,9 @@ import java.util.Map;
 /**
  * Created by chris on 25-05-17.
  */
-public class TemplateFixture extends TemplateEngine {
+public class TemplateFixture {
+
+    private TemplateEngine templateEngine = new TemplateEngine();
 
     private LocalDate datum = LocalDate.now();
     private String name;
@@ -24,18 +26,9 @@ public class TemplateFixture extends TemplateEngine {
     }
 
     public String maakBericht() {
-        return merge();
-    }
-
-    @Override
-    protected Template getTemplate() {
-        return Template.MYTEMPLATE;
-    }
-
-    @Override
-    protected Map<String, Object> getTemplateVars(Map<String, Object> vars) {
-        vars.put("datum", datum);
-        vars.put("naam", name);
-        return vars;
+        Map<String, Object> templateVars = new HashMap<String, Object>();
+        templateVars.put("datum", datum);
+        templateVars.put("naam", name);
+        return templateEngine.merge(Template.MYTEMPLATE, templateVars);
     }
 }

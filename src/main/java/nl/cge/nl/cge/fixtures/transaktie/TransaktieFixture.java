@@ -1,4 +1,4 @@
-package nl.cge.json;
+package nl.cge.nl.cge.fixtures.transaktie;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;

@@ -6,13 +6,12 @@ import org.apache.velocity.runtime.RuntimeConstants;
 import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 
 import java.io.StringWriter;
-import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by chris on 25-05-17.
  */
-public abstract class TemplateEngine {
+public class TemplateEngine {
 
     static {
         Velocity.addProperty(RuntimeConstants.RESOURCE_LOADER, "classpath");
@@ -20,10 +19,9 @@ public abstract class TemplateEngine {
         Velocity.init();
     }
 
-    public String merge() {
-        org.apache.velocity.Template vTemplate = Velocity.getTemplate("/templates/" + getTemplate().getTemplateName());
+    public String merge(Template template, Map<String, Object> templateVars) {
+        org.apache.velocity.Template vTemplate = Velocity.getTemplate("/templates/" + template.templateName());
         VelocityContext context = new VelocityContext();
-        Map<String, Object> templateVars = getTemplateVars(new HashMap<String, Object>());
         for (String key : templateVars.keySet()) {
             context.put(key, templateVars.get(key));
         }
@@ -31,9 +29,5 @@ public abstract class TemplateEngine {
         vTemplate.merge(context, stringWriter);
         return stringWriter.toString();
     }
-
-    protected abstract Template getTemplate();
-
-    protected abstract Map<String, Object> getTemplateVars(Map<String, Object> vars);
 
 }

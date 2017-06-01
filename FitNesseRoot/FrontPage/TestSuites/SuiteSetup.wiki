@@ -1,9 +1,8 @@
  
 !**> imports
 
-|import         |
-|nl.cge.sample  |
-|nl.cge.json    |
-|nl.cge.fixtures|
+|import                    |
+|nl.cge.fixtures.samples   |
+|nl.cge.fixtures.transaktie|
 
 ***!

@@ -13,7 +13,7 @@ public enum Template {
         this.templateName = myTemplates;
     }
 
-    public String getTemplateName() {
+    public String templateName() {
         return templateName;
     }
 }
